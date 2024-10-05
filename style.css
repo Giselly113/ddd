@@ -1,0 +1,260 @@
+/* Geral */
+body {
+    font-family: 'Comic Neue', cursive; /* Fonte principal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Fundo claro */
+}
+
+header {
+    background-color: #6423a0; /* Cor do cabeçalho */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Centraliza o texto */
+}
+
+.nav-menu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite quebra em dispositivos menores */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza os produtos */
+}
+
+/* Ajustes para produtos */
+.product {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1 1 calc(25% - 20px); /* 4 produtos por linha */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 calc(33.33% - 20px); /* 3 produtos por linha */
+    }
+
+    .search-bar input {
+        width: calc(100% - 46px);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .product {
+        flex: 1 1 calc(50% - 20px); /* 2 produtos por linha */
+    }
+
+    .slider {
+        max-height: 200px;
+    }
+}
+
+/* Estilização do Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333; /* Cor do cabeçalho */
+    text-align: center; /* Centraliza o título */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilização dos rótulos e campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e; /* Cor dos rótulos */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #7e1088; /* Cor do campo em foco */
+    outline: none;
+}
+
+/* Estilização do botão de checkout */
+.btn, button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e1088; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover, button:hover {
+    background-color: #9e134d; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d; /* Cor do texto do rodapé */
+}
+
+/* Geral */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Fundo claro */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho do checkout */
+header {
+    background-color: #6423a0; /* Cor do cabeçalho */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização das seções do formulário */
+.customer-info,
+.payment-info {
+    background-color: #e9e6f0; /* Cor de fundo para as seções */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #6423a0; /* Cor dos títulos das seções */
+    margin-top: 0;
+}
+
+/* Estilização dos rótulos e campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e; /* Cor dos rótulos */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #7e1088; /* Cor do campo em foco */
+    outline: none;
+}
+
+/* Estilização do botão de checkout */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e1088; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #9e134d; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d; /* Cor do texto do rodapé */
+}
+
+
+
+.cart {
+    position: relative;
+    font-size: 1.5em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    background-color: #ff4500;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Para ficar no fluxo normal do layout */
+    clear: both; /* Garante que o rodapé fique abaixo de outros elementos flutuantes */
+}
+
+.footer p {
+    margin: 0; /* Remove margens para melhor alinhamento */
+}
